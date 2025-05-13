@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>петушиные бои 2034</title>
+    <style>
+        /* Основные стили */
+        body {
+            font-family: 'Comic-Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            transition: background 0s;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+    
+
+        /* Блоки с информацией */
+        .section {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 90px;
+        }
+
+        /* Навигация */
+        nav {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        nav a {
+            color: #ffffff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Кнопки смены фона */
+        .bg-buttons {
+            display: flex;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #171818;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #ff5e00;
+        }
+
+        /* Форма регистрации */
+        .registration-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        input, textarea {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #000000;
+        }
+
+        /* Футер */
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            background: rgba(0, 0, 0, 0.7);
+        }
+    </style>
+</head>
+<body>
+    <!-- Анимированный фон (матрица) -->
+
+    <div class="container">
+        <header>
+            <h1>петушиные бои 2034</h1>
+        </header>
+
+        <!-- Навигация -->
+        <nav>
+            <a href="https://collegetsaritsyno.mskobr.ru/" target="_blank">колледж "царицыно"</a>
+        </nav>
+
+        <!-- Кнопки смены фона -->
+        <div class="bg-buttons">
+            <button onclick="setBg('code')">россия фон</button>
+            <button onclick="setBg('dark')">черный фоон</button>
+        </div>
+
+        <!-- Организаторы -->
+        <div class="section">
+            <h2>Организаторы</h2>
+            <ul>
+                <li><strong>Григорьев Семен, Петров Макссим - Короли</strong></li>
+                <li><strong>СЕрова Соня, Накупабев Кирилл - Крепостные</strong></li>
+            </ul>
+        </div>
+
+        <!-- Программа -->
+        <div class="section">
+            <h2>20 августа будет в актовом зале будет:</h2>
+            <ol>
+                <li><strong>10:30</strong> — Открытие</li>
+                <li><strong>11:00</strong> — Делаем ставки</li>
+                <li><strong>13:00</strong> — Проведение боев</li>
+                <li><strong>20:00</strong> — Награждение</li>
+            </ol>
+        </div>
+
+        <!-- Регистрация -->
+        <div class="section">
+            <h2>Регистрация</h2>
+            <form class="registration-form" onsubmit="alert('ждем вас :3'); return false;">
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="email" placeholder="Email" required>
+                <button type="submit">зарегистрироваться</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        &copy; петушиные бои | все свои))
+    </footer>
+
+    <!-- Скрипты -->
+    <script>
+
+        // Смена фона
+        function setBg(type) {
+            const body = document.body;
+        if (type === 'code') {
+                body.style.background = "linear-gradient(#FFFFFF, #0000FF, #FF0000)";
+                canvas.style.display = "none";
+            } else if (type === 'dark') {
+                body.style.background = "#121212";
+                canvas.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
